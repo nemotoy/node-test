@@ -33,7 +33,7 @@ app.use(session({
   saveUninitialize: true
 }));
 
-// app.use('/', setUser, routes);
+app.use('/', setUser, routes);
 app.use('/users', users);
 app.use('/boards', setUser, boards);
 app.use('/register', register);
